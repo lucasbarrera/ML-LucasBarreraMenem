@@ -238,13 +238,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 361px) {
-  .nav {
-    display: block;
-  }
-  .nav--burgermenu {
-    display: none;
-  }
+@media (min-width: 426px) {
   .first {
     flex-direction: row;
     .header--img {
@@ -297,6 +291,12 @@ body {
   }
 }
 @media (min-width: 769px) {
+  .nav {
+    display: block;
+  }
+  .nav--burgermenu {
+    display: none;
+  }
   .enlaces {
     display: flex;
     flex-direction: row;
