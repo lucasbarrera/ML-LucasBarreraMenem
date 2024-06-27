@@ -1,0 +1,280 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+  background-color: #ebebeb;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #eac926;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header--img {
+  width: 50%;
+}
+.header--search {
+  margin: 0 auto;
+  position: relative;
+  margin: 10px 10px;
+  width: 100%;
+
+  input {
+    width: 100%;
+    height: 30px;
+  }
+  i {
+    position: absolute;
+    font-size: 16px;
+    right: 5px;
+    top: 5px;
+  }
+}
+.header--text {
+  text-align: center;
+}
+.nav--burgermenu {
+  margin: 0px auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 20px;
+  padding: 10px;
+  padding: 1%;
+  background-color: #03264c;
+  border-radius: 25%;
+}
+.nav {
+  display: none;
+}
+.nav--list li {
+  color: black;
+  list-style: none;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+.formulario {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  input {
+    margin: 10px auto;
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+.fecha {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  h3 {
+    margin-left: 15px;
+    text-align: left;
+  }
+}
+.perfil {
+  width: 100%;
+  h3 {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
+.opciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  input {
+    width: 30px;
+    margin: 0;
+  }
+}
+.intereses {
+  h3 {
+    text-align: left;
+  }
+}
+.categoria-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  input {
+    margin: 10px auto;
+    width: 20%;
+  }
+  label {
+    width: 80%;
+  }
+}
+.categoria {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.2s;
+  input {
+    border: 1px solid black;
+    padding: 2px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #c5c3c3;
+    height: 30px;
+  }
+  input:hover {
+    background-color: #0762c4;
+  }
+  button {
+    background-color: #c5c3c3;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+  }
+  button:hover {
+    background-color: #0762c4;
+  }
+}
+.piedepagina {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  .footer--box {
+    background-color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264c;
+  }
+  i:hover {
+    color: #0762c4;
+  }
+  .box--titulo {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .box--text {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+  }
+}
+.footer-copy {
+  p {
+    margin: 0;
+    background-color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media (min-width: 361px) {
+  .nav {
+    display: block;
+  }
+  .nav--burgermenu {
+    display: none;
+  }
+  .first {
+    flex-direction: row;
+    .header--img {
+      width: 50%;
+    }
+    .header--search {
+      width: 50%;
+    }
+    .header--text {
+      width: 30%;
+    }
+    .logo-search {
+      width: 70%;
+    }
+    .leyenda {
+      width: 30%;
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav--list {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  .piedepagina {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  .list--item {
+    margin: 0 10px;
+  }
+  .footer--copy {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+}
