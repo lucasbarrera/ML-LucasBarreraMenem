@@ -3,6 +3,7 @@ const path = require("path");
 
 const app = express();
 
+let port = 3000 || process.env.PORT;
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
@@ -15,6 +16,6 @@ app.get("/register", (req, res) => {
 app.get("/login", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/login.html"));
 });
-app.listen(8000, () => {
-  console.log("Servidor corriendo en puerto 8000");
+app.listen(port, () => {
+  console.log("Servidor corriendo con normalidad");
 });
